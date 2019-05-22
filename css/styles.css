@@ -1,0 +1,201 @@
+.bordered-gray {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 5px;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,.075);
+}
+
+body > .page {
+    margin: auto;
+    min-width: 350px;
+    background: #ffffff;
+}
+
+.header-mobile {
+    display: none;
+    padding-left: 10px;
+    height: 45px;
+}
+
+.spotlight > div > article > img {
+    width: 100%;
+}
+
+footer > .footer-content {
+    display: flex;
+    background: #2049a3;
+    color: #ffffff;
+}
+
+footer > .footer-content > div {
+    width: 50%;
+}
+
+footer > .footer-content > div:last-child {
+    text-align: right;
+}
+
+@media screen and (max-width: 720px) {
+    
+    .page {
+        width: 100%;
+    }
+    
+    .header-mobile {
+        display: flex;
+    }
+
+    .header-mobile > .btn-menu {
+        width: 10%;
+    }
+
+    .header-mobile > .btn-menu > span {
+        font-size:30px;
+        cursor:pointer
+    }
+
+    .header-mobile > .logo-mobile {
+        width: 80%;
+    }
+
+    .header-mobile > .logo-mobile > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+    
+    #header > .close-btn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    #header {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        padding-top: 60px;
+    }
+
+    #header > .header-logo-search > .logo > img{
+        display: none;
+    }
+
+    #header.opened {
+        width: 250px;
+    }
+
+    #header > .menu > .nav {
+        flex-direction: column;
+    }
+
+    .spotlight {
+        margin: 10px 5px 10px 5px;
+    }
+
+    #other-sections > div > article > .section {
+        display: flex;
+    }
+
+    #other-sections > div > article > .section > div {
+        padding: 5px;
+        width: 50%;
+    }
+
+    #other-sections > div > article > .section > div:first-child > img {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 720px) {
+    
+    .page {
+        width: 720px;
+    }
+
+    #header > .close-btn {
+        display: none;
+    }
+    
+    #header > .header-logo-search {
+        display: flex;
+        margin: 20px 0 20px 0;
+        height: 120px;
+    }
+    
+    #header > .header-logo-search > .logo {
+        width: 50%;
+    }
+
+    #header > .header-logo-search > .logo > img {
+        margin-left: 20px;
+        height: 100%;
+    }
+    
+    #header > .header-logo-search > .search {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 50%;
+    }
+    
+    #header > .menu {
+        height: 50px;
+    }
+
+    #header > .menu > nav {
+        border: 1px solid rgba(0,123,255,.25);
+        border-radius: .25rem;
+    }
+
+    .spotlight > div {
+        margin: 30px;
+    }
+
+    #other-sections > div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    #other-sections > div > article > .section {
+        padding: 10px;
+        margin: 20px;
+        width: 300px;
+    }
+
+    #other-sections > div > article > .section > div:first-child > img {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .page {
+        width: 1200px;
+    }
+
+    #other-sections > div > article > .section {
+        width: 350px;
+    }
+
+}
